@@ -84,133 +84,48 @@ PINNED_INTERVIEW = {
     
     <br><hr><br><p><b>Kaynak Bilgisi:</b> Bu özel röportaj Sanat Türk için derlenmiştir.</p>
     """,
-   "image": "images/tolga_ozdogan.png",
+    "image": "images/tolga_ozdogan.png",
 }
 
 # --- AKILLI VE ETİKETLİ KAYNAK LİSTESİ ---
 ALL_SOURCES = [
-    {
-        "url": "https://www.edebiyathaber.net/feed/",
-        "name": "Edebiyat Haber",
-        "is_interview": False,
-    },
-    {
-        "url": "https://kayiprihtim.com/category/haberler/edebiyat/feed/",
-        "name": "Kayıp Rıhtım",
-        "is_interview": False,
-    },
-    {
-        "url": "https://kayiprihtim.com/category/haberler/roportajlar/feed/",
-        "name": "Kayıp Rıhtım Röportaj",
-        "is_interview": True,
-    },
-    {"url": "https://kitapeki.com/feed/", "name": "Kitap Eki", "is_interview": False},
-    {
-        "url": "https://kitapeki.com/category/soylesi/feed/",
-        "name": "Kitap Eki Söyleşi",
-        "is_interview": True,
-    },
-    {"url": "https://k24kitap.org/rss", "name": "K24 Edebiyat", "is_interview": False},
-    {"url": "https://oggito.com/rss", "name": "Oggito", "is_interview": False},
-    {
-        "url": "https://sanatkritik.com/feed/",
-        "name": "Sanat Kritik",
-        "is_interview": False,
-    },
-    {
-        "url": "https://www.sabitfikir.com/rss",
-        "name": "Sabitfikir",
-        "is_interview": False,
-    },
-    {
-        "url": "https://kalemkahveklavye.com/feed/",
-        "name": "Kalem Kahve Klavye",
-        "is_interview": False,
-    },
-    {
-        "url": "https://literaedebiyat.com/feed/",
-        "name": "Litera Edebiyat",
-        "is_interview": False,
-    },
-    {
-        "url": "https://parsomenfanzin.com/feed/",
-        "name": "Parşömen Fanzin",
-        "is_interview": False,
-    },
-    {
-        "url": "https://fikiredebiyat.com.tr/rss/kitap",
-        "name": "Fikir Edebiyat",
-        "is_interview": False,
-    },
-    {
-        "url": "https://haberedebiyat.com/feed/",
-        "name": "Haber Edebiyat",
-        "is_interview": False,
-    },
-    {
-        "url": "https://www.kitaphaber.com.tr/rss.php",
-        "name": "Kitap Haber",
-        "is_interview": False,
-    },
-    {
-        "url": "https://edebiyatburada.com/feed/",
-        "name": "Edebiyat Burada",
-        "is_interview": False,
-    },
-    {
-        "url": "https://edebiyatkulisi.com.tr/feed/",
-        "name": "Edebiyat Kulisi",
-        "is_interview": False,
-    },
-    {
-        "url": "https://sanatokur.com/kategori/edebiyat-haberleri/feed/",
-        "name": "Sanat Okur",
-        "is_interview": False,
-    },
-    {
-        "url": "https://sanatokur.com/kategori/soylesiler/feed/",
-        "name": "Sanat Okur Söyleşi",
-        "is_interview": True,
-    },
-    {
-        "url": "https://www.haberturk.com/rss/kategori/kultur-sanat.xml",
-        "name": "Habertürk",
-        "is_interview": False,
-    },
-    {
-        "url": "https://www.ntv.com.tr/sanat.rss",
-        "name": "NTV Kültür Sanat",
-        "is_interview": False,
-    },
-    {
-        "url": "https://www.haberler.com/rss/kultur-sanat.xml",
-        "name": "Haberler.com",
-        "is_interview": False,
-    },
-    {
-        "url": "https://www.sondakika.com/rss/kultur-sanat.xml",
-        "name": "Sondakika Kültür Sanat",
-        "is_interview": False,
-    },
-    {
-        "url": "https://tr.euronews.com/rss?level=theme&name=kultur",
-        "name": "Euronews",
-        "is_interview": False,
-    },
-    {
-        "url": "https://www.edebiyathaber.net/tag/roportaj/feed/",
-        "name": "Edebiyat Haber Röportaj",
-        "is_interview": True,
-    },
-    {
-        "url": "https://edebiyatsoylesileri.com/rss",
-        "name": "Edebiyat Söyleşileri",
-        "is_interview": True,
-    },
+    {"url": "https://www.edebiyathaber.net/feed/", "name": "Edebiyat Haber", "is_interview": False, "category": "EDEBİYAT"},
+    {"url": "https://kayiprihtim.com/category/haberler/edebiyat/feed/", "name": "Kayıp Rıhtım", "is_interview": False, "category": "EDEBİYAT"},
+    {"url": "https://kayiprihtim.com/category/haberler/roportajlar/feed/", "name": "Kayıp Rıhtım Röportaj", "is_interview": True, "category": "ÖZEL SÖYLEŞİ"},
+    {"url": "https://kitapeki.com/feed/", "name": "Kitap Eki", "is_interview": False, "category": "EDEBİYAT"},
+    {"url": "https://kitapeki.com/category/soylesi/feed/", "name": "Kitap Eki Söyleşi", "is_interview": True, "category": "ÖZEL SÖYLEŞİ"},
+    {"url": "https://k24kitap.org/rss", "name": "K24 Edebiyat", "is_interview": False, "category": "EDEBİYAT"},
+    {"url": "https://oggito.com/rss", "name": "Oggito", "is_interview": False, "category": "KÜLTÜR SANAT"},
+    {"url": "https://sanatkritik.com/feed/", "name": "Sanat Kritik", "is_interview": False, "category": "KÜLTÜR SANAT"},
+    {"url": "https://www.sabitfikir.com/rss", "name": "Sabitfikir", "is_interview": False, "category": "EDEBİYAT"},
+    {"url": "https://kalemkahveklavye.com/feed/", "name": "Kalem Kahve Klavye", "is_interview": False, "category": "EDEBİYAT"},
+    {"url": "https://literaedebiyat.com/feed/", "name": "Litera Edebiyat", "is_interview": False, "category": "EDEBİYAT"},
+    {"url": "https://parsomenfanzin.com/feed/", "name": "Parşömen Fanzin", "is_interview": False, "category": "EDEBİYAT"},
+    {"url": "https://fikiredebiyat.com.tr/rss/kitap", "name": "Fikir Edebiyat", "is_interview": False, "category": "EDEBİYAT"},
+    {"url": "https://haberedebiyat.com/feed/", "name": "Haber Edebiyat", "is_interview": False, "category": "EDEBİYAT"},
+    {"url": "https://www.kitaphaber.com.tr/rss.php", "name": "Kitap Haber", "is_interview": False, "category": "EDEBİYAT"},
+    {"url": "https://edebiyatburada.com/feed/", "name": "Edebiyat Burada", "is_interview": False, "category": "EDEBİYAT"},
+    {"url": "https://edebiyatkulisi.com.tr/feed/", "name": "Edebiyat Kulisi", "is_interview": False, "category": "EDEBİYAT"},
+    {"url": "https://sanatokur.com/kategori/edebiyat-haberleri/feed/", "name": "Sanat Okur", "is_interview": False, "category": "KÜLTÜR SANAT"},
+    {"url": "https://sanatokur.com/kategori/soylesiler/feed/", "name": "Sanat Okur Söyleşi", "is_interview": True, "category": "ÖZEL SÖYLEŞİ"},
+    
+    # Ulusal Haber Ajansları - Kültür Sanat
+    {"url": "https://www.haberturk.com/rss/kategori/kultur-sanat.xml", "name": "Habertürk", "is_interview": False, "category": "KÜLTÜR SANAT"},
+    {"url": "https://www.ntv.com.tr/sanat.rss", "name": "NTV Kültür Sanat", "is_interview": False, "category": "KÜLTÜR SANAT"},
+    {"url": "https://www.haberler.com/rss/kultur-sanat.xml", "name": "Haberler.com", "is_interview": False, "category": "KÜLTÜR SANAT"},
+    {"url": "https://www.sondakika.com/rss/kultur-sanat.xml", "name": "Sondakika Kültür Sanat", "is_interview": False, "category": "KÜLTÜR SANAT"},
+    {"url": "https://tr.euronews.com/rss?level=theme&name=kultur", "name": "Euronews", "is_interview": False, "category": "KÜLTÜR SANAT"},
+    {"url": "https://www.cumhuriyet.com.tr/rss/kultur-sanat.xml", "name": "Cumhuriyet", "is_interview": False, "category": "KÜLTÜR SANAT"},
+    {"url": "https://www.trthaber.com/kultur-sanat_articles.rss", "name": "TRT Haber", "is_interview": False, "category": "KÜLTÜR SANAT"},
+    {"url": "https://www.sabah.com.tr/rss/kultur-sanat.xml", "name": "Sabah", "is_interview": False, "category": "KÜLTÜR SANAT"},
+    {"url": "https://www.gazeteduvar.com.tr/rss/kultur-sanat", "name": "Gazete Duvar", "is_interview": False, "category": "KÜLTÜR SANAT"},
+    {"url": "https://www.birgun.net/xml/kultur-sanat.xml", "name": "BirGün", "is_interview": False, "category": "KÜLTÜR SANAT"},
+    
+    # Röportaj Kaynakları
+    {"url": "https://www.edebiyathaber.net/tag/roportaj/feed/", "name": "Edebiyat Haber Röportaj", "is_interview": True, "category": "ÖZEL SÖYLEŞİ"},
+    {"url": "https://edebiyatsoylesileri.com/rss", "name": "Edebiyat Söyleşileri", "is_interview": True, "category": "ÖZEL SÖYLEŞİ"},
 ]
 
-
-# --- SIFIR HATA FOTOĞRAF DEDEKTÖRÜ ---
 def is_valid_image(url):
   if not url:
     return False
@@ -220,7 +135,6 @@ def is_valid_image(url):
   if any(x in url.lower() for x in ["avatar", "logo", "1x1", "data:image"]):
     return False
   return True
-
 
 def extract_image_safely(entry, html_content):
   img_url = None
@@ -255,8 +169,6 @@ def extract_image_safely(entry, html_content):
 
   return "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=1200&q=80"
 
-
-# --- YARIM HABER VE EKSİK FOTOĞRAF KURTARICI KANCA ---
 def scrape_full_article(url, fallback_html, fallback_image):
   headers = {
       "User-Agent": (
@@ -331,8 +243,6 @@ def scrape_full_article(url, fallback_html, fallback_image):
       or "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=1200&q=80",
   )
 
-
-# --- AKILLI HTML TEMİZLEYİCİ ---
 def clean_turkish_content(html_content, source_name):
   if not html_content:
     return ""
@@ -390,7 +300,6 @@ def clean_turkish_content(html_content, source_name):
       " derlenmiştir.</p>"
   )
 
-
 def get_safe_feed(url):
   headers = {
       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/121.0.0.0"
@@ -419,7 +328,6 @@ def get_safe_feed(url):
   except:
     return None
 
-
 def get_article_body(entry):
   if isinstance(entry, dict) and entry.get("content"):
     return entry["content"][0].get("value", "")
@@ -429,7 +337,6 @@ def get_article_body(entry):
     return entry.get("summary", "")
   else:
     return getattr(entry, "summary", "")
-
 
 def save_to_google_drive(json_str, file_name):
   try:
@@ -465,7 +372,6 @@ def save_to_google_drive(json_str, file_name):
   except:
     pass
 
-
 # --- GÜNCELLENMİŞ EDEBİYAT YARIŞMALARI TARAYICISI ---
 def scrape_edebiyat_odulleri():
     url = "https://www.guncel-egitim.org/yarisma/edebiyat-yarismalari/"
@@ -476,21 +382,15 @@ def scrape_edebiyat_odulleri():
         res.encoding = 'utf-8'
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
-            
-            # Sitedeki tüm bağlantıları ve kart yapılarını tarayarak gerçek yarışma ilanlarını yakalayalım
             for box in soup.find_all(['div', 'article', 'li', 'section']):
                 title_tag = box.find(['h2', 'h3', 'h4', 'a'])
                 if not title_tag: continue
                 title = title_tag.get_text(strip=True)
-                
                 title_lower = title.lower()
-                # Sadece genel kategori başlıklarını eleyip asıl yarışma duyurularını alıyoruz
                 if any(exclude in title_lower for exclude in ["resim yarışmaları", "fotoğraf yarışmaları", "karikatür yarışmaları", "tasarım yarışmaları", "proje yarışmaları", "kısa film"]):
                     continue
-                    
                 if not any(keyword in title_lower for keyword in ["edebiyat", "şiir", "roman", "öykü", "hikaye", "yarışma", "ödül", "kitap", "deneme", "mektup"]):
                     continue
-                    
                 if len(title) < 10: continue
                 
                 link_tag = box.find('a', href=True)
@@ -514,7 +414,6 @@ def scrape_edebiyat_odulleri():
     except Exception as e:
         print("Edebiyat ödülleri çekilirken hata:", e, flush=True)
 
-    # Eğer özel filtrelemede çok az veri kalırsa site ana başlıklarındaki tüm linkleri tarayarak güvenli yedek oluşturalım
     if len(oduller_listesi) == 0:
         try:
             res = requests.get(url, headers=headers, timeout=15)
@@ -545,7 +444,6 @@ def scrape_edebiyat_odulleri():
             }
         ]
     return oduller_listesi
-
 
 # --- ANA YÖNLENDİRİCİ MOTOR ---
 def build_archives():
@@ -633,7 +531,8 @@ def build_archives():
           article_data["category"] = "ÖZEL SÖYLEŞİ"
           interviews_list.append(article_data)
         else:
-          article_data["category"] = "KİTAP / EDEBİYAT"
+          # Kaynaktaki kategori etiketini (EDEBİYAT veya KÜLTÜR SANAT) okuyup değişkene yazıyoruz.
+          article_data["category"] = source.get("category", "KÜLTÜR SANAT")
           news_list.append(article_data)
 
       except:
@@ -645,7 +544,6 @@ def build_archives():
   interviews_list.insert(0, PINNED_INTERVIEW)
 
   return news_list[:150], interviews_list[:150]
-
 
 # --- TOLGA ÖZDOĞAN KÖŞE YAZILARI TARAYICISI ---
 def fetch_tolga_articles():
@@ -748,7 +646,6 @@ def fetch_tolga_articles():
         ),
     }]
   return yazilar
-
 
 if __name__ == "__main__":
   os.makedirs("haberler", exist_ok=True)
