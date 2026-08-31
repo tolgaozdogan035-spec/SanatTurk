@@ -84,7 +84,7 @@ PINNED_INTERVIEW = {
     
     <br><hr><br><p><b>Kaynak Bilgisi:</b> Bu özel röportaj Sanat Türk için derlenmiştir.</p>
     """,
-    "image": "https://sanatturk.com/images/tolga_ozdogan.png",
+   "image": "images/tolga_ozdogan.png",
 }
 
 # --- AKILLI VE ETİKETLİ KAYNAK LİSTESİ ---
