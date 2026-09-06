@@ -372,6 +372,40 @@ def save_to_google_drive(json_str, file_name):
   except:
     pass
 
+# --- RSS OLUŞTURUCU EKLENDİ ---
+def create_rss_xml(news_list, filepath="haberler/rss.xml"):
+    """Haber listesini Make.com'un okuyabileceği standart RSS formatına çevirir."""
+    rss_content = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    rss_content += '<rss version="2.0">\n'
+    rss_content += '  <channel>\n'
+    rss_content += '    <title>Sanat Türk | Güncel Haberler</title>\n'
+    rss_content += '    <link>https://sanatturk.com</link>\n'
+    rss_content += '    <description>Kültür, sanat ve edebiyat dünyasından güncel gelişmeler.</description>\n'
+    rss_content += '    <language>tr-tr</language>\n'
+
+    # Sadece en güncel 15 haberi RSS'e ekliyoruz ki dosya boyutu gereksiz şişmesin
+    for item in news_list[:15]:
+        title = str(item.get("title", "")).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        desc = str(item.get("desc", "")).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        image_url = str(item.get("image", "")).replace("&", "&amp;")
+        
+        rss_content += '    <item>\n'
+        rss_content += f'      <title>{title}</title>\n'
+        rss_content += f'      <description>{desc}</description>\n'
+        rss_content += '      <link>https://sanatturk.com</link>\n'
+        # Make.com'un görseli Instagram'a çekebilmesi için kritik satır:
+        rss_content += f'      <enclosure url="{image_url}" type="image/jpeg" length="1024" />\n'
+        rss_content += '    </item>\n'
+
+    rss_content += '  </channel>\n'
+    rss_content += '</rss>'
+
+    try:
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(rss_content)
+    except Exception as e:
+        print(f"RSS oluşturulurken hata: {e}")
+
 # --- GÜNCELLENMİŞ EDEBİYAT YARIŞMALARI TARAYICISI ---
 def scrape_edebiyat_odulleri():
     url = "https://www.guncel-egitim.org/yarisma/edebiyat-yarismalari/"
@@ -531,7 +565,6 @@ def build_archives():
           article_data["category"] = "ÖZEL SÖYLEŞİ"
           interviews_list.append(article_data)
         else:
-          # Kaynaktaki kategori etiketini (EDEBİYAT veya KÜLTÜR SANAT) okuyup değişkene yazıyoruz.
           article_data["category"] = source.get("category", "KÜLTÜR SANAT")
           news_list.append(article_data)
 
@@ -658,6 +691,10 @@ if __name__ == "__main__":
   try:
     with open("haberler/haberler.json", "w", encoding="utf-8") as f:
       json.dump(news, f, ensure_ascii=False, indent=4)
+      
+    # YENİ EKLENEN KOD: JSON oluşturulduktan hemen sonra RSS'i de oluşturuyoruz
+    create_rss_xml(news)
+    
     save_to_google_drive(
         json.dumps(news, ensure_ascii=False, indent=4),
         "sanat_turk_arsiv.json",
