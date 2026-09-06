@@ -21,6 +21,20 @@
         "desc": "Bilgi – Kitap Okuma Yarışmaları..."
     },
     {
+        "title": "Mahal Edebiyat Adı Kadın Öykü Yarışması",
+        "link": "https://www.guncel-egitim.org/mahal-edebiyat-adi-kadin-oyku-yarismasi/",
+        "source": "Güncel Eğitim",
+        "date": "Güncel Duyuru",
+        "desc": "Mahal Edebiyat Adı Kadın Öykü Yarışması..."
+    },
+    {
+        "title": "Çünkü Kadınız Kolektifi Öykü Yarışması",
+        "link": "https://www.guncel-egitim.org/cunku-kadiniz-kolektifi-oyku-yarismasi/",
+        "source": "Güncel Eğitim",
+        "date": "Güncel Duyuru",
+        "desc": "Çünkü Kadınız Kolektifi Öykü Yarışması..."
+    },
+    {
         "title": "12. EÇEV Gençler Öykü – Şiir Yarışması",
         "link": "https://www.guncel-egitim.org/ecev-gencler-oyku-siir-yarismasi/",
         "source": "Güncel Eğitim",
@@ -89,19 +103,5 @@
         "source": "Güncel Eğitim",
         "date": "Güncel Duyuru",
         "desc": "4. Hekimoğlu İsmail Hikaye Yarışması 2026..."
-    },
-    {
-        "title": "Çığ Dergisi Öykü Yarışması",
-        "link": "https://www.guncel-egitim.org/cig-dergisi-oyku-yarismasi/",
-        "source": "Güncel Eğitim",
-        "date": "Güncel Duyuru",
-        "desc": "Çığ Dergisi Öykü Yarışması..."
-    },
-    {
-        "title": "TUDEM Edebiyat Ödülleri Kısa Roman Yarışması 2026",
-        "link": "https://www.guncel-egitim.org/tudem-edebiyat-odulleri-kisa-roman-yarismasi/",
-        "source": "Güncel Eğitim",
-        "date": "Güncel Duyuru",
-        "desc": "TUDEM Edebiyat Ödülleri Kısa Roman Yarışması 2026..."
     }
 ]
