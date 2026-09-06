@@ -11,7 +11,7 @@ from googleapiclient.http import MediaIoBaseUpload
 
 # --- SABİTLENMİŞ ÖZEL RÖPORTAJ ---
 PINNED_INTERVIEW = {
-    "title": "Edebiyatın yükselen yıldızı: TOLGA ÖZDOĞAN",
+    "title": "Edebiyatın yükselen ismi: TOLGA ÖZDOĞAN",
     "link": "#",
     "source": "Özel Söyleşi",
     "date": "Güncel",
