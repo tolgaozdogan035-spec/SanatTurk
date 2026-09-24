@@ -6,12 +6,6 @@
     <description>Kültür, sanat ve edebiyat dünyasından güncel gelişmeler.</description>
     <language>tr-tr</language>
     <item>
-      <title>Arzu Alkan Ateş yazdı: Kadın Duyarlılığı</title>
-      <description>Bir okur olarak listemdeki kadın yazarların sayısı bundan yirmi yıl önce maalesef çok değildi. Leyla Erbil, Sevim Burak, Tomris Uyar, Selçuk Baran, Nezihe Meriç, Gülten Akın, Nilgün Marmara, Sevgi Soy...</description>
-      <link>https://sanatturk.com</link>
-      <enclosure url="https://edebiyatburada.com/wp-content/uploads/2023/09/ayfer-tunc-1-300x166.webp" type="image/jpeg" length="1024" />
-    </item>
-    <item>
       <title>Bombalar yalnızca binaları yıkmadı… Yeni Kitap</title>
       <description>Hastaneleri susturdu, çocukların oyuncaklarını enkazın altına gömdü, annelerin ninnilerini feryada dönüştürdü.Gazze’de açlık yoksulluktan değil, bir silaha dönüştürülmüştü. Çocuklar bir lokma ekmeğe, ...</description>
       <link>https://sanatturk.com</link>
@@ -94,6 +88,12 @@
       <description>İngilizce edebiyatın en prestijli ödülü Booker Prize’ın 2026 kısa listesi 22 Eylül 2026 Salı akşamı Londra’daki Southbank Centre’da açıklandı. Temmuz ayında duyurulan 13 kitaplık uzun liste altıya ind...</description>
       <link>https://sanatturk.com</link>
       <enclosure url="https://kalemkahveklavye.com/wp-content/uploads/2026/07/booker-prize-2026-takvimi.webp" type="image/jpeg" length="1024" />
+    </item>
+    <item>
+      <title>Vladimir Tumanov’dan Çocuklara Macera Dolu Yeni Bir Roman</title>
+      <description>Vladimir Tumanov‘un yadığıMine Kazmaoğlu‘nun dilimize çevirdiğiLUYTEN YILDIZIadlı yeni romanGünışığı Kitaplığıetiketiyle çocuklarla buluşuyor.Kraliçeyi Kurtarmak ve Haritada Kaybolmak gibi fantastik r...</description>
+      <link>https://sanatturk.com</link>
+      <enclosure url="https://gunisigikitapligi.com/wp-content/uploads/2026/09/Luyten-kapak.jpg" type="image/jpeg" length="1024" />
     </item>
   </channel>
 </rss>
